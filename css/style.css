@@ -1,1 +1,1 @@
-svg{stroke:none;stroke-width:4}svg circle{fill:#ff0000}svg g#ellipses{fill:#00ff00}
+svg{stroke:none;stroke-width:4}svg circle{fill:#ff0000}svg g#ellipses{fill:#00ff00}g#examForme{transform-origin:50%;animation:animRotaForme 3s linear infinite}@keyframes animRotaForme{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
