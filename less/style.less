@@ -1,6 +1,8 @@
 svg{
-	stroke:none;
+	stroke:blue;
 	stroke-width:4;
+	stroke-dasharray: 450;
+	stroke-dashoffset: 450;
 	circle{
 		fill: #ff0000;
 	}
@@ -10,15 +12,14 @@ svg{
 }
 
 g#examForme{
-	//transform:rotate(45deg);
     transform-origin: 50%;
-  	animation: animRotaForme 3s linear infinite;
+  	animation: animRotation 3s linear infinite;
 }
 
 
 /* = = = = = = = = = ANIMATIONS = = = = = = = =  = = = = = = = = */
 
-@keyframes animRotaForme {
+@keyframes animRotation {
   from {
   	transform:rotate(0deg);
   }
@@ -27,3 +28,12 @@ g#examForme{
   }
 }
 
+
+@keyframes animContour {
+  from {
+    stroke-dashoffset: 450;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
